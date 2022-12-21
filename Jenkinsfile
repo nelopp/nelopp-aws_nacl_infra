@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps { 
-                git archive 'aws_nacl_infra'
+                echo 'archive aws_nacl_infra'
             }
         }
     }
