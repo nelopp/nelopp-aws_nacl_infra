@@ -1,9 +1,11 @@
-ne {
+
+pipeline {
     agent any
     stages {
-        stage('ls') {
+        stage('Hello') {
             steps { 
-                git archive 'https://github.com/nelopp/nelopp-aws_nacl_infra.git'
+                git archive 'aws_nacl_infra'
             }
         }
     }
+}
